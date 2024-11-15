@@ -1,0 +1,490 @@
+.content{
+    width: 100%;
+    padding-top: 69px;
+    min-height: calc(100vh - 69px - 4px);
+}
+
+/* Category */
+
+.content .home-page_category{
+    text-align: center;
+}
+.category-content .category-subtitle{
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 14px;
+    color: #515353;
+}
+.category-content h1{
+    font-size: 45px ;
+    line-height: 66px;
+    font-weight: 700;
+}
+.category-items{
+    max-width: 890px !important;
+    display: flex;
+    justify-content: center;
+}
+.category-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    padding: 0 10px !important;
+}
+.category-item a{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0 !important;
+    border-radius: 12px;
+    color: black;
+    height: 128px;
+    padding: 12px 0 15px ;
+    box-shadow: 0 2px 6px rgba(34, 34, 34, .02);
+}
+.category-item a:hover{
+    color: var(--color-selected) !important;
+    box-shadow: 0 8px 16px rgba(34,34,34,.08);
+    transition: all .2s ease-out;
+}
+
+.all-categories{
+    margin: 8px 0 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.all-categories a{
+    color: var(--color-selected);
+    font-size: 15px;
+    line-height: 27px;
+    cursor: pointer;
+    font-weight: 600 !important;
+}
+
+
+.badge-div{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    height: 20px;
+}
+.badge-text{
+    padding: 4px 8px;
+    color: #fff;
+    background-color: #81ce80;
+    border-radius: 12px;
+    font-weight: 600 !important;
+    font-size: 12px;
+    line-height: 12px
+}
+
+/* whyPolicyBuyList */
+
+.home-page_why-buy{
+    padding-top: 72px;
+    padding-bottom: 13px;
+    text-align: center;
+}
+.why-policy-buy-list{
+    max-width: 1170px;
+    margin: auto;
+}
+.why-policy-buy-list-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.why-policy-buy-list-contentItem{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-policy-buy-list .why-policy-buy-list-title{
+    line-height: 27px;
+    color: black;
+    margin: 0;
+}
+.why-policy-buy-list-contentItem span{
+    font-weight:600 !important;
+    line-height: 24px;
+}
+.why-policy-buy-list-contentItem p{
+    color: #515353;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* landingCover */
+
+.landing-cover-row .scrolling-page{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    justify-content: center;
+}
+.scrolling-page-title{
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600 !important;
+}
+.scrolling-page-detail{
+    font-size: 14px;
+    line-height: 22px;
+    color: #515353;
+}
+
+.scrolling-page-link{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600 !important;
+    color: var(--color-selected);
+    cursor: pointer;
+}
+
+.back-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back-picture span{
+    margin-top: 18px;
+    color: #717171;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+}
+
+/* landingTabs */ 
+
+.home-page_landingTabs{
+    padding: 72px 0;
+}
+.landing-tabs-title{
+    margin: 0 auto 52px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    font-weight: 600 !important;
+}
+.tabList{
+    align-self: center;
+    max-width: 100%;
+    margin-bottom: 32px;
+    padding-bottom: 52px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vue-tab{
+    height: inherit;
+    margin-right: 8px;
+    padding: 0 16px;
+    font-size: 15px;
+    line-height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-weight: 500 !important;
+    height: 40px;
+    color: #717171;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.tabList .active{
+    color: var(--color-selected);
+    border: 1px solid var(--color-selected) ;
+    border-radius: 12px;
+}
+
+
+
+
+
+@media (max-width: 576px) { 
+    .home-page_category{
+        padding: 78px 0;
+    }
+    .category-content h1{
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .category-content .category-subtitle, .category-items{
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .category-items .category-item{
+        margin: 5px 0;
+        padding: 0 5px !important;
+    }
+    .category-items .category-item a img{
+        max-width: 98px;
+    }
+    .category-items .category-item a span{
+        display: inline-block;
+        width: 100%;
+        margin-top: 2px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600 !important;
+    }
+    .all-categories a{
+        display: inline-block;
+        width: 100%;
+        align-items: center;
+        margin: 8px 0 15px;
+    }
+
+    /* whyPolicyBuyList */
+    .why-policy-buy-list-content{
+        padding-top: 50px;
+    }
+    .why-policy-buy-list-contentItem{
+        padding-top: 0;
+        padding-bottom: 45px;
+    }
+    .home-page_why-buy{
+        padding-top: 36px
+    }
+    .why-policy-buy-list .why-policy-buy-list-title{
+        font-size: 20px !important;
+        /* line-height: 27px; */
+    }
+    .why-policy-buy-list-contentItem span{
+        margin-top: 4px;
+        font-size: 18px;
+    }
+    .why-policy-buy-list-contentItem p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 576px) { 
+    .home-page_category{
+        padding: 78px 0;
+    }
+    .category-content h1{
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .category-content .category-subtitle, .category-items{
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .category-items .category-item{
+        margin: 5px 0;
+        padding: 0 5px !important;
+    }
+    .category-items .category-item a img{
+        max-width: 98px;
+    }
+    .category-items .category-item a span{
+        display: inline-block;
+        width: 100%;
+        margin-top: 2px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600 !important;
+    }
+    .all-categories a{
+        margin: 8px 0 15px;
+    }
+
+    /* whyPolicyBuyList */
+    
+    .why-policy-buy-list-contentItem{
+        padding-top: 0;
+        padding-bottom: 45px;
+    }
+    .home-page_why-buy{
+        padding-top: 36px
+    }
+    .why-policy-buy-list .why-policy-buy-list-title{
+        font-size: 20px !important;
+        /* line-height: 27px; */
+    }
+    .why-policy-buy-list-content{
+        padding-top: 50px;
+    }
+    .why-policy-buy-list-contentItem span{
+        margin-top: 4px;
+        font-size: 18px;
+    }
+    .why-policy-buy-list-contentItem p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    .content .home-page_category{
+        padding: 100px 0;
+    }
+    .category-content h1{
+        font-size: 45px !important;
+        line-height: 66px !important;
+    }
+    .category-content .category-subtitle, .category-items{
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 14px;
+    }
+    .category-items .category-item{
+        margin: 5px 0;
+        padding: 0 5px !important;
+    }
+    .category-items .category-item a{
+        height: 162px;
+    }
+    .category-items .category-item a img{
+        max-width: 125px;
+    }
+    .category-items .category-item a span{
+        vertical-align: middle;
+        margin-top: 2px;
+        font-size: 15px;
+        line-height: 27px;
+        font-weight: 600 !important;
+    }
+    .all-categories{
+        margin: 30px 0 15px 0;
+    }
+
+    /* whyPolicyBuyList */
+    .why-policy-buy-list-contentItem{
+        padding-bottom: 45px;
+    }
+    .home-page_why-buy{
+        padding-top: 72px
+    }
+    .why-policy-buy-list .why-policy-buy-list-title{
+        font-size: 32px !important;
+    }
+    .why-policy-buy-list-content{
+        padding-top: 88px;
+    }
+    .why-policy-buy-list-contentItem span{
+        font-size: 20px;
+    }
+    .why-policy-buy-list-contentItem p{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+
+    /* landingCover */
+    .landing-cover-row{
+        width: 80%;
+        margin: auto;
+        padding-right: 50px;
+    }
+
+}
+
+@media (max-width: 991.98px) { 
+    .category-item{
+        margin: 5px 0;
+        padding: 0 5px !important;
+    }
+}
+@media (min-width: 992px) { 
+    .category-items .category-item{
+        margin: 10px 0;
+        padding: 0 10px !important;
+    }
+
+    /* whyPolicyBuyList */
+    .why-policy-buy-list-contentItem{
+        padding-bottom: 0;
+    }
+
+    /* landingCover */
+    .scrolling-page-boxItem{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        min-height: 990px;
+        justify-content: center;
+    }
+    .scrolling-page-title{
+        margin-top: 0;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .scrolling-page-detail{
+        font-size: 16px;
+        line-height: 24px;
+        color: #515353;
+    }
+    .scrolling-page-link{
+        font-size: 15px;
+        margin-top: 16px;
+        line-height: 27px;
+    }
+
+    .fixed-boxItem-image{
+        position: sticky;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100vh;
+        min-height: 900px;
+    }
+    .image-animate{
+        position: absolute;
+        right: 38px;
+        display: flex;
+        transform: scale3d(0,0,1);
+        transform-style: preserve-3d;
+    }
+    .image-animate .image-animate-first{
+        position: relative;
+        top: -25px;
+        right: 12px;
+    }
+    
+}
+
+@media (min-width: 1200px) { 
+    /* whyPolicyBuyList */
+    .why-policy-buy-list-contentItem{
+        max-width: 330px !important;
+    }
+}
+
+@media (min-width: 1400px) { 
+    .category-content h1{
+        font-size: 54px !important;
+        line-height: 72px !important;
+    }
+}

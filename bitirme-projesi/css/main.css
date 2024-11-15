@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 400 ;
+    overflow-x: hidden;
+    font-family: "Inter", serif !important;
+    background-color: var(--color-ui-01);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --color-selected:  #0089ec;
+    --color-ui-01: #f5f7f9;
+}

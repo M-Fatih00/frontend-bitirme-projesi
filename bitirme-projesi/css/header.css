@@ -1,0 +1,243 @@
+/* up message */
+.up-message{
+    position: fixed;
+    top: 84px;
+    right: 16px;
+    width: 336px;
+    padding: 12px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px 1px rgba(34, 34, 34, 0.08);
+}
+.up-message span{
+    margin-right: 4px;
+    margin-left: 8px;
+    color: #1d1e1e;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+
+/* header */
+.header-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 69px;
+    padding: 0 15px;
+    width: 100%;
+    background-color: transparent;
+    transition: transparent 0.3s ease;
+}
+
+.header-wrapper.scrolled {
+    background-color: white;
+}
+
+
+.nav-items{
+    margin-left: 130px;
+    height: 48px;
+    align-items: center;
+
+}
+.nav-item{
+    margin-right: 35px;
+    font-size: 1rem;
+    color: #515353;
+}
+.nav-item a{
+    color: #515353;
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: var(--color-selected); 
+    transition:  0.3s ease;
+}
+.nav-link:hover::before {
+    width: 100%;
+} 
+.nav-item a:hover{
+    color: var(--color-selected);
+}
+
+.nav-item i{
+    width: 10px;
+}
+
+
+
+.contact-no{
+    font-size: 12px;
+    color: #717171;
+}
+
+.app-login button{
+    padding: 12px 24px;
+    min-height: auto;
+    border-radius: 12px;
+    font-weight: 600;
+    background-color: var(--color-selected);
+}
+
+.logo-goat{
+    width: 26px;
+    height: 27px;
+}
+.logo-text{
+    height: 27px;
+    width: 167px;
+}
+
+
+@media (max-width: 576px) { 
+    .logo-text{
+        
+        width: 117px;
+        height: 19px;
+    }
+    .logo-goat{
+        width: 21px;
+        height: 22px;
+    }
+    .app-nav, .app-login{
+        display: none;
+    }
+    
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+    }
+    .up-message{
+        position: fixed;
+        top: 72px;
+        right: 15px;
+        left: 15px;
+        float: none;
+        width: calc(100% - 30px);
+        padding: 12px 16px;
+        border-radius: 16px;
+        box-shadow: 0 4px 14px 1px rgba(34, 34, 34, 0.08);
+    }
+    .up-message img{
+        width: 27px;
+        height: 27px;
+    }
+}
+@media (min-width: 576px) { 
+    .logo-text{
+        width: 141px;
+    }
+    .app-nav, .app-login{
+        display: none;
+    }
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .up-message{
+        position: fixed;
+        top: 72px;
+        right: 15px;
+        left: 15px;
+        float: none;
+        width: calc(100% - 30px);
+        padding: 12px 16px;
+        border-radius: 16px;
+        box-shadow: 0 4px 14px 1px rgba(34, 34, 34, 0.08);
+    }
+    .up-message img{
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .app-nav, .app-login{
+        display: none;
+    }
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .app-menu{
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) { 
+    .app-nav, .up-message, .app-login{
+        display: flex;
+    }
+    .nav-items{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-items .nav-item{
+        font-size: 14px;
+        margin: 10px;
+    }
+    .logo-text{
+        width: 115px;
+    }
+    .app-menu{
+        display: none;
+    }
+    .up-message{
+        position: fixed;
+        top: 84px;
+        right: 16px;
+        left: auto;
+        width: 336px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 16px;
+        box-shadow: 0 4px 14px 1px rgba(34, 34, 34, 0.08);
+    }
+    .up-message img{
+        width: 44px;
+        height: 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-items .nav-item{
+        font-size: 14px;
+        margin-right: 25px;
+    }
+    .nav-items{
+        margin-left: 130px;
+        height: 48px;
+        align-items: center;
+    }
+    .logo-text{
+        height: 27px;
+        width: 167px;
+    }
+    
+}
+
+@media (min-width: 1400px) { 
+    .nav-items .nav-item{
+        font-size: 16px;
+    }
+}

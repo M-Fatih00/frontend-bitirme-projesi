@@ -1,0 +1,423 @@
+/* commentList */
+.home-page_commentList{
+    margin-bottom: 20px;
+    padding: 72px 0;
+}
+
+.comment-list-title{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.comment-list-cards{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.list-card{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 219px;
+    max-width: 377px;
+    padding: 32px 32px 0 32px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.list-card span:last-child {
+    text-align: end;
+}
+
+
+
+
+/* awardList */
+
+.award-list{
+    padding: 32px 15px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.award-list-content{
+    display: flex;
+    flex-direction: column;
+}
+.award-list-img{
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    justify-content: flex-end;
+    height: 238px;
+    margin-bottom: 36px;
+}
+.award-list-img img{
+    width: 100%;
+    height: 100%;
+}
+.award-list-content h2{
+    color: #1d1e1e;
+    font-weight: 600 !important;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.award-list-content p{
+    margin: 16px 0;
+    color: #515353;
+    font-weight: 400 !important;
+    font-size: 16px;
+    line-height: 24px;
+}
+.award-list-content a{
+    display: flex;
+    align-items: center;
+    color: var(--color-selected);
+    font-weight: 700 !important;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+
+
+/* contractedCompanyCardList */
+.home-page_contractedCompanyCardList{
+    margin-bottom: 20px;
+    margin-top: 64px;
+}
+
+.contracted-company-card-list h2{
+    margin: 0 27px;
+    font-size: 28px !important;
+    text-align: center;
+    font-weight: 600 !important;
+}
+
+.company-list{
+    max-width: 1020px;
+    margin: 52px auto 40px;
+    justify-content: center;
+    align-items: center;
+}
+.company-list-link{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 115px;
+    margin: 10px;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+    filter: grayscale(100%);
+}
+.company-list-link:hover{
+    filter: grayscale(0);
+    transition: 0.3s all ease;
+}
+.company-list-link img{
+    width: 106px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.moreCompanies{
+    display: flex;
+    justify-content: center;
+    color: var(--color-selected);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600 !important;
+}
+
+.inActive{
+    display: none;
+}
+.active{
+    display: flex;
+}
+
+
+
+
+
+/* questionsList */
+.home-page_questionsList{
+    max-width: 960px;
+    margin: auto;
+    padding: 72px 0;
+    margin-bottom: 20px;
+}
+.questions-list-title{
+    margin-bottom: 46px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600 !important;
+}
+.questions-list{
+    margin-top: 24px;
+}
+.question-content{
+    margin-bottom: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(34,34,34,0.02);
+}
+.question{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 26px 36px;
+}
+.question-title{
+    width: calc(100% - 36px);
+    color: #000;
+    font-size: 18px !important;
+    line-height: 27px;
+    font-weight: 500 !important;
+}
+.question i{
+    width: 34px;
+    height: 24px;
+    margin-left: auto;
+    color: var(--color-selected);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answer{
+    border-top: 1px solid #dee0e2;
+    padding: 16px 0 36px;
+    color: #515353;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 36px;
+}
+
+
+
+/* categoryList */
+.home-page_categoryList{
+    margin-bottom: 100px;
+}
+.category-list-title h3{
+    font-size: 32px !important;
+    line-height: 39px !important;
+    font-weight: 700 !important;
+}
+
+.category-list-title p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.category-list-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 52px 8px;
+    column-gap: 25px;
+    row-gap: 25px;
+    text-align: center;
+}
+.category-list-item{
+    height: 162px;
+    width: 162px;
+}
+.category-list-item .item-a{
+    height: 100%;
+    row-gap: 22px;
+    justify-content: space-between;
+}
+
+.category-list-item img{
+    width: 121px;
+    height: 90px;
+}
+
+.category-list-item span{
+    font-size: 15px;
+    font-weight: 600 !important;
+    text-align: center;
+}
+
+.category-list-item{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+@media (max-width: 768px){
+    /* awardList */
+    .award-list-content p{
+        margin: 8px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .award-list-content a{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .award-list-content{
+        order: 2;
+    }
+    .award-list-img{
+        gap: 32px;
+        justify-content: center;
+        height: 154px;
+        margin-bottom: 32px;
+        order: 1;
+    }
+    .award-list-content h2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    /* contractedCompanyCardList */
+    .moreCompanies{
+        font-size: 14px;
+    }
+    .company-list-link{
+        height: 69px;
+        margin: 10px 5px 12px;
+        padding: 10px;
+    }
+}
+@media (min-width: 768px){
+    /* commentList */
+    .home-page_commentList{
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+
+    /* awardList */
+    .award-list{
+        padding: 72px 0;
+    }
+
+    /* contractedCompanyCardList */
+    .home-page_contractedCompanyCardList{
+        margin-bottom: 72px;
+        margin-top: 72px;
+    }
+
+    /* questionsList */
+    .home-page_questionsList{
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+    .questions-list-title{
+        margin-top: 70px;
+        font-size: 32px !important;
+        line-height: 39px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    /* commentList */
+    .comment-list-cards{
+        justify-content: unset;
+        height: 100%;
+        margin: 18px 0 35px 14px;
+        overflow-y: hidden;
+        scrollbar-width: none;
+    }
+    .comment-list-title{
+        font-size: 18px !important;
+    }
+    .list-card{
+        display: inline-flex;
+        width: 82vw;
+        max-height: 100vh;
+        padding: 28px;
+        height: 195px;
+    }
+    .list-card span:first-child{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .list-card span:last-child{
+        margin-right: 20px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* contractedCompanyCardList */
+    .contracted-company-card-list h2{
+        margin: 0;
+        padding-bottom: 16px;
+        font-size: 20px !important;
+        text-align: center;
+        font-weight: 600 !important;
+    }
+    .company-list{
+        margin: 0 0 28px;
+    }
+
+
+    /* questionsList */
+    .questions-list{
+        margin-top: 16px;
+    }
+    .question{
+        padding: 20px 24px;
+    }
+    .question-title{
+        font-size: 15px !important;
+        line-height: 22px;
+    }
+    .answer{
+        margin: 0 24px;
+        padding: 16px 0 24px;
+    }
+
+
+    /* categoryList */
+    .category-list-items{
+        margin: 28px 0;
+        column-gap: 17px;
+        row-gap: 17px;
+    }
+    .category-list-item{
+        height: 128px;
+    }
+    .category-item .item-a img{
+        max-width: 120px;
+        max-height: 55px;
+    }
+    .category-list-title h3{
+        font-size: 20px !important;
+        line-height: 32px !important;
+    }
+    .category-list-title p{
+        font-size: 14px;
+    }
+}
+@media (min-width: 992px) { 
+
+}
+@media (min-width: 1200px) { 
+    /* awardList */
+    .award-list-content p{
+        white-space: nowrap;
+    }
+}
+@media (min-width: 1400px){
+    /* awardList */
+    .award-list {
+        margin: 0 50px;
+    }
+}
